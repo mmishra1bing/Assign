@@ -7,8 +7,10 @@ Welcome to the Django RESTful API project! This project includes a RESTful API a
 To set up and run the application, follow these steps:
 
 1. **Clone this repository to your local machine:**
-git clone https://github.com/mmishra1bing/Assign.git
 
+```
+git clone https://github.com/mmishra1bing/Assign.git
+```
 
 2. **Activate a virtual environment:**
 source myenv/bin/activate # On macOS/Linux
