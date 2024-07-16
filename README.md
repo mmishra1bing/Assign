@@ -13,21 +13,32 @@ git clone https://github.com/mmishra1bing/Assign.git
 ```
 
 2. **Activate a virtual environment:**
+
+```
 source myenv/bin/activate # On macOS/Linux
 
 myenv\Scripts\activate # On Windows
-
+```
 
 3. **Navigate into the project directory:**
+
+```
 cd backend
+```
 
 
 4. **Install dependencies:**
+
+```
 pip install -r requirements.txt
+```
 
 
 5. **Start the development server:**
+
+```
 python manage.py runserver
+```
 
 6. **Access the API endpoints at `http://localhost:8000/`**
 
@@ -39,15 +50,28 @@ To reun and view the application, follow these steps:
 
 1. **Open the path in another terminal.**
 
-2. **deactivate the virtual env.**
+2. **deactivate the virtual env if nessary**
+
+```
+deactivate #windows
+```
 
 3. **Navigate into the project directory:**
+
+```
 cd frontend
+```
 
 
 4. **Install dependencies:**
+
+```
 npm install
+```
 
 
 5. **Start the development server:**
+
+```
 npm run dev
+```
