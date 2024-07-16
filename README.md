@@ -15,10 +15,13 @@ git clone https://github.com/mmishra1bing/Assign.git
 2. **Activate a virtual environment:**
 
 ```
+python3 -m venv myenv  # On macOS/Linux
 source myenv/bin/activate # On macOS/Linux
 
+python -m venv myenv # On Windows
 myenv\Scripts\activate # On Windows
 ```
+
 
 3. **Navigate into the project directory:**
 
