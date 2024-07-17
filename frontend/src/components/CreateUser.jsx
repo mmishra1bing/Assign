@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Button, Form, FormGroup, Input, Label } from "reactstrap";
 // import axios from 'axios';
 // import { CREATE_USER_API_URL } from '../constants';
 
@@ -52,32 +53,56 @@ const CreateUserForm = () => {
 
     return (
         <div>
-            <h2>Create User</h2>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Name:
-                    <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-                </label>
-                <br />
-                <label>
-                    Email:
-                    <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-                </label>
-                <br />
-                <label>
-                    Document:
-                    <input type="text" name="document" value={formData.document} onChange={handleChange} required />
-                </label>
-                <br />
-                <label>
-                    Phone:
-                    <input type="number" name="phone" value={formData.phone} onChange={handleChange} required />
-                </label>
-                <br />
-                <button type="submit">Create User</button>
-            </form>
+        <h2>Create User</h2>
+        <Form onSubmit={handleSubmit}>
+          <FormGroup>
+            <Label for="name">Name:</Label>
+            <Input
+              type="text"
+              name="name"
+              required
+              onChange={handleChange}
+              value={formData.name}
+              style={{ width: '500px' }}
+            />
+          </FormGroup>
+          <FormGroup>
+            <Label for="email">Email:</Label>
+            <Input
+              type="email"
+              name="email"
+              required
+              onChange={handleChange}
+              value={formData.email}
+              style={{ width: '500px' }}
+            />
+          </FormGroup>
+          <FormGroup>
+            <Label for="document">Document:</Label>
+            <Input
+              type="text"
+              name="document"
+              required
+              onChange={handleChange}
+              value={formData.document}
+              style={{ width: '500px' }}
+            />
+          </FormGroup>
+          <FormGroup>
+            <Label for="phone">Phone:</Label>
+            <Input
+              type="number"
+              name="phone"
+              required
+              onChange={handleChange}
+              value={formData.phone}
+              style={{ width: '500px' }}
+            />
+          </FormGroup>
+          <Button >Create User</Button>
+        </Form>
         </div>
-    );
+      );
 };
 
 export default CreateUserForm;
