@@ -30,7 +30,7 @@ const CreateUserForm = () => {
                 body: JSON.stringify(formData)
             });
             if (response.ok) {
-                alert('User created successfully!');
+                alert('User created successfully, Visit UsersList, to view it!');
                 // Optionally, reset the form
                 setFormData({
                     name: '',
@@ -40,7 +40,7 @@ const CreateUserForm = () => {
                 });
 
                     // Navigate to viewall page
-                    window.location.href = 'http://localhost:8000/api/users/viewall'; // Change the URL as per your route
+                    // window.location.href = 'http://localhost:8000/api/users/viewall'; // Change the URL as per your route
 
             } else {
                 alert('Failed to create user');
