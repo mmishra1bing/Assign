@@ -49,7 +49,7 @@ python manage.py runserver
 
 ## Start React
 
-To reun and view the application, follow these steps:
+To run and view the application, follow these steps:
 
 1. **Open the path in another terminal.**
 
