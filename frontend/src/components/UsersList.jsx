@@ -13,7 +13,6 @@ const UsersList = () => {
     }, []);
 
     return (
-        <h2>List of All Users</h2>
         <Table dark>
           <thead>
             <tr>
